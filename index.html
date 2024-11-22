@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario Extenso para Practicar JavaScript</h1>
+    <form id="extended-form">
+        <div class="form-group">
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" maxlength='12' placeholder='Ex: Mayuscula, minuscula, numero, caracter especial y maximo 12 caracteres' required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Género:</label>
+            <select id="gender" name="gender">
+                <option value="" selected>Selecciona una opción</option>
+            </select>
+        </div>
+      
+       <div class="form-group age">
+            <label for="age">Edad:</label>
+            <input value="" type="number" id="age" name="age" min="13" max="60" required>
+        </div>
+      
+      <hr>
+
+        <div class="form-group preferencias">
+            <label>Preferencias:</label>
+                <div>
+                    <label class="checkbox">Deportes<input type="checkbox" name="preferences" value="sports"></label>
+                    <label class="checkbox">Música<input type="checkbox" name="preferences" value="music"> </label>
+                    <label class="checkbox">Viajar<input type="checkbox" name="preferences" value="travel"> </label>
+                </div>
+        </div>
+      
+      <hr>
+
+        <div class="form-group biografia">
+            <label for="bio">Biografía:</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Escribe algo sobre ti..."></textarea>
+        </div>
+
+        <hr>
+
+        <div class="form-group preferencias">
+            <label>Estado civil:</label>
+            <label class="checkbox">Soltero/a<input type="radio" name="marital_status" value="single"></label>
+            <label class="checkbox">Casado/a<input type="radio" name="marital_status" value="married"></label>
+            <label class="checkbox">Divorciado/a<input type="radio" name="marital_status" value="divorced"></label>
+        </div>
+  
+      <div class='button-container'>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+            <div id="spinner" class="spinner hidden" name="spinner">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+        </div>
+      </div>
+    </form>
+  
+    <script src="script.js"></script>
+  
+ </body>
+</html>
