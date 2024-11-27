@@ -143,8 +143,6 @@ document.addEventListener('DOMContentLoaded', function (){
     formulario.preferences.length > 0 &&
     formulario.marital_status !== '';
 
-    console.log(formulario); 
-
     submit.classList.toggle('button-disabled', !formValida);
     submit.disabled = !formValida;
   }
