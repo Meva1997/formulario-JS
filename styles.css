@@ -57,12 +57,17 @@ select, textarea, button {
     height: 33px; 
 }
 
-#age, .age{
+.age{
   display: flex;
   align-items: center;  
-  width: 30%; 
+  width: 80%; 
   height: 30px;
   margin: 20px 0px;  
+}
+
+#age{
+  height: 30px;
+  margin-left: 5px;
 }
 
 .checkbox{
@@ -99,7 +104,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-
+    margin-top: 20px;
 }
 
 button:hover {
