@@ -8,8 +8,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #034362a3;
     color: #080808;
+    background-color: #204a6e;
 }
 
 h1 {
@@ -45,6 +45,7 @@ select, textarea, button {
     border-radius: 5px;
     font-size: 12px;
 }
+
 
 #name, #email, #password{
     width: 100%;
