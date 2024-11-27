@@ -116,8 +116,7 @@ document.addEventListener('DOMContentLoaded', function (){
     spinner.classList.remove('hidden'); 
       
       resetFormulario(); 
-      resetCheckbox(); 
-      resetRadio(); 
+      resetInputs(); 
     
     // Simulación de envío de datos con un retraso
     setTimeout(() => {
@@ -156,16 +155,22 @@ document.addEventListener('DOMContentLoaded', function (){
       comprobarFormulario(); // Verifica si el formulario sigue siendo válido después de resetear
     }
 
-    function resetCheckbox(){
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]')
-        checkboxes.forEach(checkbox => checkbox.checked = false); 
-        return; 
+    function resetInputs(){
+      const inputs = document.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+      inputs.forEach(input => input.checked = false); 
+      return; 
     }
-    function resetRadio(){
-        const radio = document.querySelectorAll('input[type="radio"]')
-        radio.forEach(radio => radio.checked = false); 
-        return; 
-    }
+
+    // function resetCheckbox(){
+    //     const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+    //     checkboxes.forEach(checkbox => checkbox.checked = false); 
+    //     return; 
+    // }
+    // function resetRadio(){
+    //     const radio = document.querySelectorAll('input[type="radio"]')
+    //     radio.forEach(radio => radio.checked = false); 
+    //     return; 
+    // }
   
     
   })
